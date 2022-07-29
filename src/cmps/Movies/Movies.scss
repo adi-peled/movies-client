@@ -1,0 +1,19 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width:800px) {
+        justify-content: center;
+    }
+    .movie {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 180px;
+        cursor: pointer;
+
+        img {
+            height: 250px;
+            width: 100%;
+        }
+    }
+}

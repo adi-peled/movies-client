@@ -1,0 +1,41 @@
+@import './scss/mixin.scss';
+@import './scss/animations.scss';
+@import './scss/variables.scss';
+
+* {
+    margin: 0;
+    color :$third-color
+}
+
+
+
+.app {
+    position: relative;
+    background-color: $main-color;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+input,
+button {
+    border: 0;
+    outline: none;
+}
+
+
+.fullscreen {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100%;
+    @include abcCenter;
+}
+
+.err{
+    color:$err-color ;
+    margin-bottom: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}

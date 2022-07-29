@@ -1,0 +1,47 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/variables.scss';
+
+.movie-modal {
+    @include abcCenter;
+    z-index: 5;
+    height: 700px;
+    width: 80%;
+    max-width: 600px;
+    background-color: $main-color;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        max-width: 45%;
+
+
+        .detail {
+            margin-top: 8px;
+        }
+    }
+
+    .close {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        cursor: pointer;
+
+    }
+}
